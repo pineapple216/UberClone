@@ -15,6 +15,9 @@
 		5DA08CD71B7915450024CFF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA08CD51B7915450024CFF6 /* LaunchScreen.storyboard */; };
 		5DA08CE21B7915450024CFF6 /* UberCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA08CE11B7915450024CFF6 /* UberCloneTests.swift */; };
 		5DA08CED1B7915450024CFF6 /* UberCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA08CEC1B7915450024CFF6 /* UberCloneUITests.swift */; };
+		5DB69E8F1B79169A00560B54 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB69E8E1B79169A00560B54 /* MapKit.framework */; };
+		5DB69E911B7916A100560B54 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB69E901B7916A100560B54 /* CoreLocation.framework */; };
+		5DB69E931B79258100560B54 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB69E921B79258100560B54 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		5DA08CE81B7915450024CFF6 /* UberCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA08CEC1B7915450024CFF6 /* UberCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberCloneUITests.swift; sourceTree = "<group>"; };
 		5DA08CEE1B7915450024CFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DB69E8E1B79169A00560B54 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5DB69E901B7916A100560B54 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5DB69E921B79258100560B54 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB69E911B7916A100560B54 /* CoreLocation.framework in Frameworks */,
+				5DB69E8F1B79169A00560B54 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +87,8 @@
 		5DA08CBD1B7915440024CFF6 = {
 			isa = PBXGroup;
 			children = (
+				5DB69E901B7916A100560B54 /* CoreLocation.framework */,
+				5DB69E8E1B79169A00560B54 /* MapKit.framework */,
 				5DA08CC81B7915450024CFF6 /* UberClone */,
 				5DA08CE01B7915450024CFF6 /* UberCloneTests */,
 				5DA08CEB1B7915450024CFF6 /* UberCloneUITests */,
@@ -106,6 +116,7 @@
 				5DA08CD51B7915450024CFF6 /* LaunchScreen.storyboard */,
 				5DA08CD81B7915450024CFF6 /* Info.plist */,
 				5DA08CD01B7915450024CFF6 /* UberClone.xcdatamodeld */,
+				5DB69E921B79258100560B54 /* LocationViewController.swift */,
 			);
 			path = UberClone;
 			sourceTree = "<group>";
@@ -264,6 +275,7 @@
 				5DA08CCC1B7915450024CFF6 /* ViewController.swift in Sources */,
 				5DA08CD21B7915450024CFF6 /* UberClone.xcdatamodeld in Sources */,
 				5DA08CCA1B7915450024CFF6 /* AppDelegate.swift in Sources */,
+				5DB69E931B79258100560B54 /* LocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +502,7 @@
 				5DA08CF31B7915450024CFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DA08CF41B7915450024CFF6 /* Build configuration list for PBXNativeTarget "UberCloneTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +511,7 @@
 				5DA08CF61B7915450024CFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DA08CF71B7915450024CFF6 /* Build configuration list for PBXNativeTarget "UberCloneUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +520,7 @@
 				5DA08CF91B7915450024CFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
